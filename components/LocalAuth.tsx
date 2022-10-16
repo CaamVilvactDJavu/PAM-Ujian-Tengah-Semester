@@ -22,7 +22,7 @@ function LocalAuth() {
   });
 
   const fallBackToDefaultAuth = () => {
-    console.log("fall back to password authentication");
+    console.log("Kembali ke otentikasi kata sandi");
   };
 
   const alertComponent = (title, mess, btnTxt, btnFunc) => {
@@ -35,17 +35,21 @@ function LocalAuth() {
   };
 
   const TwoButtonAlert = () =>
-    Alert.alert("Welcome To App", "Subscribe Now", [
-      {
-        text: "Back",
-        onPress: () => console.log("Cancel Pressed"),
-        style: "cancel",
-      },
-      {
-        text: "Ok",
-        onPress: () => console.log("Ok Pressed"),
-      },
-    ]);
+    Alert.alert(
+      "Selamat Datang!",
+      "Smart Application\n\nIlham Fadhlur Rahman\n120140125\nTeknik Informatika\nUTS Pengembangan Aplikasi Mobile - RA",
+      [
+        {
+          text: "Kembali",
+          onPress: () => console.log("Kembali"),
+          style: "cancel",
+        },
+        {
+          text: "Okay",
+          onPress: () => console.log("Okay"),
+        },
+      ]
+    );
 
   const handleBiometricAuth = async () => {
     // check if hardware supports biometric
@@ -54,9 +58,9 @@ function LocalAuth() {
     // fall back to default authentication method (password) if biometric is not available
     if (!isBiometricAvailable)
       return alertComponent(
-        "Please Enter Your Password",
-        "Biometric Auth no Supported",
-        "Ok",
+        "Silahkan masukkan Password anda!",
+        "Biometrics Auth tidak support",
+        "Okay",
         () => fallBackToDefaultAuth()
       );
 
@@ -69,15 +73,15 @@ function LocalAuth() {
     const savedBiometrics = await LocalAuthentication.isEnrolledAsync();
     if (!savedBiometrics)
       return alertComponent(
-        "Biometric record not found",
-        "Please Login with Password",
-        "Ok",
+        "Biometric record tidak ditemukan",
+        "Silahkan Login dengan Password",
+        "Okay",
         () => fallBackToDefaultAuth()
       );
 
     // authenticate with biometric
     const biometricAuth = await LocalAuthentication.authenticateAsync({
-      promptMessage: "Login with Biometrics",
+      promptMessage: "Login menggunakan Biometrics",
       cancelLabel: "cancel",
       disableDeviceFallback: true,
     });
@@ -106,8 +110,8 @@ function LocalAuth() {
           }}
         >
           {isBiometricSupported
-            ? "Your Device is Compatible with Biometrics"
-            : "Face or Fingerprint scanner is available on this device"}
+            ? "Perangkat anda kompatibel untuk melakukan Biometrics"
+            : "Face atau Fingerprint scanner tersedia pada perangkat ini"}
         </Text>
         <TouchableHighlight
           style={{
@@ -115,7 +119,7 @@ function LocalAuth() {
           }}
         >
           <Button
-            title="Login with Biometrics"
+            title="Login menggunakan Biometrics"
             color="black"
             onPress={handleBiometricAuth}
           />

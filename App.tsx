@@ -1,12 +1,13 @@
 import React from "react";
 import { SafeAreaView, View, StyleSheet, Text, Button } from "react-native";
-import BatteryLevel from "./components/BatteryLevel";
+import Speech from "./components/Speech";
 import LocalAuth from "./components/LocalAuth";
 
 export default function App() {
   return (
     <SafeAreaView>
       <LocalAuth />
+      <Speech />
       <View>
         <Text
           style={{
@@ -16,7 +17,6 @@ export default function App() {
         >
           Smart Application
         </Text>
-        <BatteryLevel />
       </View>
     </SafeAreaView>
   );
