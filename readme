@@ -8,20 +8,30 @@ Smart Application
 Pada Aplikasi yang saya buat ini terdapat fitur Beometric yang berguna untuk menjaga privasi pengguna. Juga terdapat fitur ToDo List untuk mencatat apa saja kegiatan yang ingin kita lakukan di setiap harinya. Ada juga Fitur speech yang menjadi pembeda dari aplikasi-aplikasi yang lain.
 
 package :   
-    "expo": "~44.0.0",
-    "expo-status-bar": "~1.2.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-native": "0.64.3",
-    "react-native-web": "0.17.1",
-    "expo-constants": "~13.0.2",
-    "expo-permissions": "~13.1.1",
-    "expo-notifications": "~0.14.0",
-    "expo-updates": "~0.11.7"
+    "@expo/vector-icons": "^13.0.0",
+    "@expo/webpack-config": "^0.17.0",
+    "@react-navigation/native": "^6.0.13",
+    "@react-navigation/native-stack": "^6.9.1",
+    "@types/react": "~18.0.0",
+    "@types/react-native": "~0.69.1",
+    "expo": "~46.0.16",
+    "expo-barcode-scanner": "^11.4.0",
+    "expo-battery": "^6.3.0",
+    "expo-camera": "^12.3.0",
+    "expo-checkbox": "^2.2.0",
+    "expo-local-authentication": "^12.3.0",
+    "expo-notifications": "^0.16.1",
+    "expo-speech": "^10.3.0",
+    "expo-status-bar": "~1.4.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-native": "0.69.6",
+    "react-native-web": "~0.18.7",
+    "expo-updates": "~0.14.6"
 
 link apk : https://expo.dev/artifacts/196f2bbd-3179-411c-bec5-df27cd65b0fc
 
 tutorial meng-install aplikasi : 
 1. Klik link yang ada diatas
 2. Tunggu proses mendownload apk
-3. Setelah download selesai maka aplikasi sudah siap untuk di-install
+3. Setelah download selesai, aplikasi sudah siap untuk di-install
