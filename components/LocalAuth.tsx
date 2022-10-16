@@ -102,7 +102,7 @@ function LocalAuth() {
         <Text
           style={{
             textAlign: "center",
-            top: 280,
+            top: 40,
             color: "white",
             backgroundColor: "green",
             marginLeft: 50,
@@ -115,7 +115,7 @@ function LocalAuth() {
         </Text>
         <TouchableHighlight
           style={{
-            top: 300,
+            top: 50,
           }}
         >
           <Button
