@@ -31,10 +31,12 @@ package :
     "react-native-web": "~0.18.7",
     "expo-updates": "~0.14.6"
 
-link apk : https://expo.dev/artifacts/196f2bbd-3179-411c-bec5-df27cd65b0fc
+Link GitHub : https://github.com/CaamVilvactDJavu/PAM-Ujian-Tengah-Semester
+Link Download Aplikasi : https://expo.dev/artifacts/196f2bbd-3179-411c-bec5-df27cd65b0fc
+Video Demo Aplikasi : https://www.youtube.com/watch?v=ZVFcdZyDRWY&t=7s
 
 tutorial meng-install aplikasi : 
-1. Klik link yang ada diatas
+1. Klik link yang ada di atas
 2. Tunggu proses mendownload apk
 3. Setelah download selesai, aplikasi sudah siap untuk di-install
 4. Setelah selesai di-install, aplikasi siap untuk dijalankan
