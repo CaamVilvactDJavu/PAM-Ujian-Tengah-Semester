@@ -24,7 +24,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "id.IlhamFadhlurRahman.UTSPAM"
     },
     "web": {
       "favicon": "./assets/favicon.png"
